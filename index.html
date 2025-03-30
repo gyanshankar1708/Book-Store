@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritrim Book Store</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
         * {
             margin: 0;
             padding: 0;
         }
 
         body {
-            background-image: url(hero\ or\ main\ section/main6.jpg);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: top;
+            font-family: "Montserrat", sans-serif;
+            ;
         }
 
         nav {
             height: 100px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             background-color: rgba(0, 0, 0, 0.557);
             color: white;
+            position: sticky;
         }
 
         nav .logo img {
@@ -42,16 +43,17 @@
 
         .out {
             height: 550px;
-            background-color: white;
+            background-color: #f2f2f2;
             display: flex;
             justify-content: center;
             flex-direction: column;
+            padding: 25px;
         }
 
         .outer {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             position: relative;
             top: 0px;
@@ -64,30 +66,31 @@
         }
 
         .cards {
-            height: 370px;
+            /* height: 370px; */
             width: 450px;
-            background-color: rgb(208, 207, 207);
+            background-color: white;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
-            border: 2px solid black;
             border-radius: 20px;
+            padding: 0px 0px 20px 0px;
         }
 
         .contact {
             color: white;
             height: 370px;
             margin: auto;
-            background-image: url(contact/contact3.jpg);
+            background-image: url(images/contact1.jpg);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 1500px;
+            background-size: 100vw;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             margin: 0px 10px;
+            padding: 50px;
         }
 
         .contact textarea {
@@ -124,6 +127,8 @@
         main h1 {
             font-size: 50px;
             margin: 25px;
+            font-family: "Roboto", sans-serif;
+            ;
         }
 
         main button {
@@ -159,8 +164,12 @@
         }
 
         .cards img {
-            height: 200px;
+            width: 450px;
+            aspect-ratio: 3/2;
             border-radius: 10px;
+            position: relative;
+            top: -4px;
+            left: -4px;
         }
 
         .cards div {
@@ -170,17 +179,20 @@
         .cards button {
             background-color: white;
             border-radius: 10px;
-            padding: 5px;
+            padding: 5px 10px;
         }
 
         .cards .title {
             font-size: 30px;
             font: bold;
+            font-family: "Roboto", sans-serif;
         }
 
         .out h1 {
             margin: 25px 50px;
             font-size: 50px;
+            font-family: "Roboto", sans-serif;
+            ;
         }
 
         footer {
@@ -196,14 +208,16 @@
             text-decoration: none;
         }
 
-        .contact button {
+        .contact .button {
             width: 75px;
             height: 35px;
             border-radius: 5px;
         }
 
-        button:hover {
+        button:hover,
+        .button:hover {
             background-color: rgb(206, 203, 203);
+            cursor: pointer;
         }
 
         .about {
@@ -211,89 +225,150 @@
             padding: 20px;
             font-size: 15px;
         }
+
+        section {
+            background-image: url(images/main1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: top;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form div {
+            margin: 0;
+            padding: 0;
+        }
+
+        .blackArea {
+            background-color: rgba(0, 0, 0, 0.568);
+            width: 93vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 34px;
+        }
+
+        .form {
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact h1 {
+            font-family: "Roboto", sans-serif;
+            ;
+        }
+
+        .readmore {
+            position: relative;
+            left: 150px;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="logo"><img src="icon/icon3.png" alt="">
-            <div class="name"> Kritrim Book Store</div>
-        </div>
-        <div class="list">
-            <ul>
-                <li><a href="">Home </a></li>
-                <li><a href="">About us </a></li>
-                <li><a href="">Services </a></li>
-                <li><a href="">Contact </a></li>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <div class="welcome">
-            <h1>Welcome to Kritrim Book Store</h1>
-        </div>
-        <div class="about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cum magni quod nulla dolores repudiandae
-                error mollitia, eveniet natus fugit accusantium numquam voluptate animi nisi fugiat id minima eligendi!
-                Rerum a ad libero, saepe cupiditate suscipit totam explicabo quo, fugit placeat ut quaerat ipsam
-                laudantium. Eligendi saepe eveniet qui odit et odio porro aperiam ipsum libero sequi. Ipsum adipisci
-                obcaecati laboriosam molestias modi, aliquid ipsam quae fugiat cumque minima ullam deleniti dolorum
-                corrupti vel tempore, eos consequatur! Veritatis ipsum animi nam totam sapiente quo aspernatur harum
-                eaque provident, sit enim alias porro, consequuntur fugiat nihil officia ad quasi unde esse.</p>
-        </div>
-        <button>Read More</button>
+    <section>
 
-    </main>
+        <nav>
+            <div class="logo"><img src="images/icon3.png" alt="">
+                <div class="name"> Kritrim Book Store</div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="#about">About us </a></li>
+                    <li><a href="#product">Available Products </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="welcome">
+                <h1>Welcome to Kritrim Book Store</h1>
+            </div>
+            <div class="about" id="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, cum magni quod nulla dolores
+                    repudiandae
+                    error mollitia, eveniet natus fugit accusantium numquam voluptate animi nisi fugiat id minima
+                    eligendi!
+                    Rerum a ad libero, saepe cupiditate suscipit totam explicabo quo, fugit placeat ut quaerat ipsam
+                    laudantium. Eligendi saepe eveniet qui odit et odio porro aperiam ipsum libero sequi. Ipsum adipisci
+                    obcaecati laboriosam molestias modi, aliquid ipsam quae fugiat cumque minima ullam deleniti dolorum
+                    corrupti vel tempore, eos consequatur! Veritatis ipsum animi nam totam sapiente quo aspernatur harum
+                    eaque provident, sit enim alias porro, consequuntur fugiat nihil officia ad quasi unde esse.</p>
+            </div>
+            <button>Read More</button>
+
+        </main>
+    </section>
     <div class="out">
-        <div class="product">
+        <div class="product" id="product">
             <h1>Available Products:-</h1>
         </div>
         <div class="outer">
             <div class="cards">
-                <div class="bookimg"><img src="books/book1.jpg" alt=""></div>
+                <div class="bookimg"><img src="images/book1.jpg" alt=""></div>
                 <div class="title">Historical Books</div>
                 <div class="details">Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Voluptates,
                     repellendus?
                 </div>
-                <button>Read more</button>
+                <div class="readmore">
+                    <button>Read more</button>
+                </div>
             </div>
             <div class="cards">
-                <div class="bookimg"><img src="books/book2.jpg" alt=""></div>
+                <div class="bookimg"><img src="images/book2.jpg" alt=""></div>
                 <div class="title">Comic Books</div>
                 <div class="details">Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Voluptates,
                     repellendus?
                 </div>
-                <button>Read more</button>
+                <div class="readmore">
+                    <button>Read more</button>
+                </div>
             </div>
             <div class="cards">
-                <div class="bookimg"><img src="books/book6.jpg" alt=""></div>
+                <div class="bookimg"><img src="images/book6.jpg" alt=""></div>
                 <div class="title">Dictonary</div>
                 <div class="details">Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Voluptates,
                     repellendus?
                 </div>
-                <button>Read more</button>
+                <div class="readmore">
+                    <button>Read more</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="contact">
-        <div>
-            <h1>Contact Us:</h1>
+    <div class="contact" id="contact">
+        <div class="blackArea">
+            <div class=form>
+                <h1>Contact Us:</h1>
+            </div>
+            <div class=form>
+                <form action="">
+                    <div>
+                        <label for="name">Name : </label>
+                        <br>
+                        <input type="text" name="name" id="" placeholder="Enter Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email : </label>
+                        <br>
+                        <input type="email" name="email" id="" placeholder="Enter Your Email" required>
+                    </div>
+                    <div>
+                        <textarea name="messages" id="" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div>
-            <form action="">
-                <label for="name">Name : </label>
-                <br>
-                <input type="text" name="name" id="" placeholder="Enter Your Name">
-                <br>
-                <label for="email">Email : </label>
-                <br>
-                <input type="email" name="email" id="" placeholder="Enter Your Email">
-                <br>
-                <textarea name="messages" id="" placeholder="Write your message here..."></textarea>
-                <br>
-            </form>
-        </div>
-        <button>Submit</button>
     </div>
     <footer>
         Copyright &copy; all right reserved
